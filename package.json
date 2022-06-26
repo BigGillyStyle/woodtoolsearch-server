@@ -14,6 +14,7 @@
     "test": "test"
   },
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "test": "tap \"test/**/*.test.js\"",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
@@ -27,7 +28,9 @@
     "fastify-plugin": "^3.0.1"
   },
   "devDependencies": {
-    "fastify-tsconfig": "^1.0.1",
-    "tap": "^16.1.0"
+    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "@types/node": "^16.11.41",
+    "tap": "^16.1.0",
+    "typescript": "^4.7.4"
   }
 }
