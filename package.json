@@ -2,6 +2,13 @@
   "name": "woodtoolsearch-server",
   "version": "1.0.0",
   "description": "This project was bootstrapped with Fastify-CLI.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "^16.15.1",
+    "npm": "^8.11.0"
+  },
   "main": "app.js",
   "directories": {
     "test": "test"
@@ -11,14 +18,12 @@
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@fastify/autoload": "^5.0.0",
     "@fastify/sensible": "^5.1.0",
     "fastify": "^4.1.0",
     "fastify-cli": "^4.2.0",
+    "fastify-favicon": "^4.0.0",
     "fastify-plugin": "^3.0.1"
   },
   "devDependencies": {
