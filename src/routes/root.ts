@@ -1,7 +1,9 @@
-'use strict'
+import type { FastifyPluginAsync } from "fastify";
 
-module.exports = async function (fastify, opts) {
-  fastify.get('/', async function (request, reply) {
-    return { root: true }
-  })
-}
+const root: FastifyPluginAsync = async (fastify, _opts): Promise<void> => {
+  fastify.get("/", async function (_request, _reply) {
+    return { root: true };
+  });
+};
+
+export default root;

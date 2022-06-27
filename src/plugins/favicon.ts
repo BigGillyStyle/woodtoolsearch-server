@@ -1,9 +1,8 @@
-"use strict";
+import fp from "fastify-plugin";
+import favicon from "fastify-favicon";
 
-const fp = require("fastify-plugin");
-
-module.exports = fp(async function (fastify, opts) {
+export default fp(async (fastify, _opts) => {
   // example without specifying options, searching favicon.ico from project root,
   // otherwise returning a default favicon
-  fastify.register(require("fastify-favicon"));
+  fastify.register(favicon);
 });
