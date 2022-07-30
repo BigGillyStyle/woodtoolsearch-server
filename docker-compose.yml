@@ -18,6 +18,8 @@ services:
       POSTGRES_PASSWORD: postgres
     volumes:
       - ./healthchecks:/healthchecks
+    ports:
+      - "5432:5432"
     healthcheck:
       test: /healthchecks/postgres-healthcheck
       interval: "5s"
