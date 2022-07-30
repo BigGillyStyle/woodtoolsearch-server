@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": "^16.16.0",
+    "npm": "^8.11.0"
+  },
   "scripts": {
     "test": "npm run build:ts && tsc -p test/tsconfig.json && tap --ts \"test/**/*.test.ts\"",
     "start": "npm run build:ts && fastify start -l info dist/app.js",
@@ -26,7 +30,7 @@
     "fastify-plugin": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
+    "@types/node": "^16.11.45",
     "@types/tap": "^15.0.5",
     "concurrently": "^7.3.0",
     "fastify-tsconfig": "^1.0.1",

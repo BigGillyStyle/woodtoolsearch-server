@@ -1,0 +1,23 @@
+services:
+  node:
+    build:
+      dockerfile: dev.Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:14.4-bullseye
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./healthchecks:/healthchecks
+    healthcheck:
+      test: /healthchecks/postgres-healthcheck
+      interval: "5s"
