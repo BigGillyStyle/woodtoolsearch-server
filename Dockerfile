@@ -1,4 +1,4 @@
-FROM node:16.16.0-alpine3.16
+FROM node:18.4.0-alpine3.16
 ENV NODE_ENV=production
 
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#handling-kernel-signals
