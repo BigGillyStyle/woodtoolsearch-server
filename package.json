@@ -27,7 +27,7 @@
     "fastify": "^4.3.0",
     "fastify-cli": "^4.4.0",
     "fastify-favicon": "^4.1.0",
-    "fastify-plugin": "^4.0.0"
+    "fastify-plugin": "^4.1.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.47",
