@@ -1,5 +1,6 @@
 services:
   node:
+    init: true
     build:
       dockerfile: dev.Dockerfile
     volumes:
