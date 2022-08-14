@@ -22,15 +22,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fastify/autoload": "^5.0.0",
+    "@fastify/autoload": "^5.2.0",
     "@fastify/sensible": "^5.1.0",
-    "fastify": "^4.3.0",
+    "fastify": "^4.4.0",
     "fastify-cli": "^4.4.0",
     "fastify-favicon": "^4.1.0",
-    "fastify-plugin": "^4.0.0"
+    "fastify-plugin": "^4.1.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.45",
+    "@types/node": "^16.11.47",
     "@types/tap": "^15.0.5",
     "concurrently": "^7.3.0",
     "fastify-tsconfig": "^1.0.1",
