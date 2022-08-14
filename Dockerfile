@@ -21,6 +21,6 @@ WORKDIR /app
 USER node
 COPY --from=builder /app/dist /app/dist
 COPY --from=builder /app/package.json /app/package-lock.json /app/favicon.ico ./
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#cmd
 CMD ["node", "./node_modules/fastify-cli/cli.js", "start", "dist/app.js"]
