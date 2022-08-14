@@ -1,8 +1,19 @@
+# directories
 .git
+.devcontainer
+.github
+.nyc_output
+dist
+healthchecks
+test
+
+# files
+.dockerignore
 .gitignore
+.taprc
 *Dockerfile*
 *docker-compose*
-.dockerignore
+README.md
 
 # for Node.js apps, you want to build the node_modules in the image, and not copy from host
 node_modules
