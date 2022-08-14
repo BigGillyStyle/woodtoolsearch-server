@@ -1,6 +1,7 @@
 FROM node:16.16.0-alpine3.16 as builder
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
+RUN npm install --location=global npm@8.17.0
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#non-root-user
 USER node
 # COPY --chown=node:node package.json package-lock.json tsconfig.json src ./
@@ -17,6 +18,7 @@ RUN apk add --no-cache tini
 ENTRYPOINT ["/sbin/tini", "--"]
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
+RUN npm install --location=global npm@8.17.0
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#non-root-user
 USER node
 COPY --from=builder /app/dist /app/dist
