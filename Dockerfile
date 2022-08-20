@@ -1,4 +1,4 @@
-FROM node:16.16.0-alpine3.16 as builder
+FROM node:16.17.0-alpine3.16 as builder
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
 RUN npm install --location=global npm@8.17.0
@@ -9,7 +9,7 @@ COPY --chown=node:node . ./
 RUN npm ci \
  && npm run build:ts
 
-FROM node:16.16.0-alpine3.16
+FROM node:16.17.0-alpine3.16
 ENV NODE_ENV=production
 EXPOSE 3000
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#handling-kernel-signals
