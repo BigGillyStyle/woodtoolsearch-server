@@ -14,7 +14,7 @@ ENV NODE_ENV=production
 EXPOSE 3000
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#handling-kernel-signals
 # https://github.com/krallin/tini#alpine-linux-package
-RUN apk add --no-cache tini
+RUN apk add --no-cache tini=0.19.0-r0
 ENTRYPOINT ["/sbin/tini", "--"]
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
