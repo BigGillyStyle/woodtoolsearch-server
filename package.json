@@ -27,7 +27,7 @@
     "@sanity/webhook": "^2.0.0",
     "fastify": "^4.5.2",
     "fastify-cli": "^5.3.0",
-    "fastify-favicon": "^4.1.0",
+    "fastify-favicon": "^4.2.0",
     "fastify-plugin": "^4.2.1"
   },
   "devDependencies": {
