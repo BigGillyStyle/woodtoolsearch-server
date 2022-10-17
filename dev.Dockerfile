@@ -1,4 +1,4 @@
-FROM node:16.17.0-bullseye
+FROM node:18.11.0-bullseye
 ENV NODE_ENV=development
 ENV FASTIFY_ADDRESS=0.0.0.0
 ENV FASTIFY_PORT=3000
