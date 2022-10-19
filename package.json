@@ -31,7 +31,7 @@
     "fastify-plugin": "^4.3.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.65",
+    "@types/node": "^18.11.2",
     "@types/tap": "^15.0.5",
     "concurrently": "^7.4.0",
     "fastify-tsconfig": "^1.0.1",
