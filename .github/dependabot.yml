@@ -8,12 +8,23 @@ updates:
   - package-ecosystem: "npm"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "Saturday"
+      time: "03:00"
+      timezone: "US/Mountain"
+
   - package-ecosystem: "docker"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "Saturday"
+      time: "03:00"
+      timezone: "US/Mountain"
+
   - package-ecosystem: "github-actions"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "Saturday"
+      time: "03:00"
+      timezone: "US/Mountain"
