@@ -25,7 +25,7 @@
     "@fastify/autoload": "^5.5.0",
     "@fastify/sensible": "^5.1.1",
     "@sanity/webhook": "^2.0.0",
-    "fastify": "^4.9.2",
+    "fastify": "^4.10.0",
     "fastify-cli": "^5.6.0",
     "fastify-favicon": "^4.2.0",
     "fastify-plugin": "^4.3.0"
